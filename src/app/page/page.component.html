@@ -1,0 +1,129 @@
+<div class="custom_page">
+    <img class="fullBg" [src]="pageData.image">
+</div>
+<div class="custom_block">
+    <div class="custom_heading">Pricing Plan</div>
+    <div class="space_bar" style="margin-top:1pc"></div>
+    <div class="heading1">Let our professional design team create a beautiful website just for you</div>
+    <div class="planArea">
+      <mat-card class="custom_card">
+        <div class="custom_card_heading">
+          <div>Basic</div>
+          <div>$10</div>
+        </div>
+        <div>
+          <div class="cardContent" style="text-align:center">
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top: 25px;">
+          <button mat-raised-button class="custom_button">Purchase</button>
+        </div>
+      </mat-card>
+      <mat-card class="custom_card">
+          <div class="custom_card_heading">
+            <div>Standered</div>
+            <div>$20</div>
+          </div>
+          <div>
+            <div class="cardContent" style="text-align:center">
+              <div class="text">Tour Add</div>
+              <div class="space_bar"></div>
+              <div class="text">Tour Add</div>
+              <div class="space_bar"></div>
+              <div class="text">Tour Add</div>
+              <div class="space_bar"></div>
+              <div class="text">Tour Add</div>
+              <div class="space_bar"></div>
+              <div class="text">Tour Add</div>
+              <div class="space_bar"></div>
+              <div class="text">Tour Add</div>
+              <div class="space_bar"></div>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top: 25px;">
+            <button mat-raised-button class="custom_button">Purchase</button>
+          </div>
+      </mat-card>
+      <mat-card class="custom_card">
+        <div class="custom_card_heading">
+          <div>Premium</div>
+          <div>$50</div>
+          <!-- <div><img [src]="custom_page.best_offer_image" class="offer_image"></div> -->
+          <div class="offer_image">Best Offer</div>
+        </div>
+        <div>
+          <div class="cardContent" style="text-align:center">
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top: 25px;">
+          <button mat-raised-button class="custom_button">Purchase</button>
+        </div>
+      </mat-card>
+      <mat-card class="custom_card">
+        <div class="custom_card_heading">
+          <div>Extra</div>
+          <div>$100</div>
+        </div>
+        <div>
+          <div class="cardContent" style="text-align:center">
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+            <div class="text">Tour Add</div>
+            <div class="space_bar"></div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top: 25px;">
+          <button mat-raised-button class="custom_button">Purchase</button>
+        </div>
+      </mat-card>
+      <div class="clear"></div>
+    </div>
+</div>
+<div class="custom_block">
+  <div class="custom_heading">Our clients who work with us</div>
+  <div class="space_bar" style="margin-top:1pc"></div>
+  <div class="heading1">Both large national corporate clients and small local businesses trust our team</div>
+  
+      <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+          <div class="item" *ngFor="let image of images;let i= index">
+            <img class="slide-image" src="{{image.image}}" >
+          </div>
+        </owl-carousel>
+    
+</div>
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container" (click)="toggle()">
+    <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+  </div>
+

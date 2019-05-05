@@ -1,0 +1,96 @@
+mat-card {
+    width:500px;
+    background: rgba(255,255,255,0.9);
+}
+
+mat-card-header {
+    color: #3f51b5;
+}
+
+mat-card-content {
+    padding: 8px;
+}
+
+.custom_page img{
+    width: 100%;
+}
+mat-grid-tile {
+    background: lightblue;
+  }
+  .pad10{
+      padding: 10px
+  }
+  .custom_block{
+      margin-top: 4pc;
+      margin-bottom: 4pc;
+  }
+  .custom_heading{
+    text-align: center;
+    font-size: 3pc;
+    color: grey;
+  }
+  .heading1{
+    text-align: center;
+    margin-bottom: 2pc;
+    color: #040b2fb3;
+    margin-top: 1pc;
+    font-size: 20px;
+  }
+  .space_bar{
+      border-top:1px solid #818981;
+      width: 10pc;
+      margin: 0px auto
+  }
+  .planArea{
+    display: table;margin: 0px auto;width: 90%;
+  }
+  .custom_card{
+      float: left;
+      width: 22%;
+      margin: 1pc;
+      padding: 0px;
+      padding-bottom: 2pc;
+      background: white;
+      overflow: hidden;
+  }
+  .custom_card_heading{
+    text-align: center;
+    padding: 2pc;
+    background: #040b2fb3;
+    color: white;
+    font-size: 24px;
+  }
+  .custom_card_heading div:nth-child(2){
+    font-size: 30px
+  }
+  .cardContent .text{
+    padding: 10px 3px;
+    color: #818981;
+  }
+  .custom_button{
+    width: 83%;
+    padding: 3px;
+    background: #040b2fb3;
+    color: white;
+  }
+  .custom_card:hover{
+    box-shadow: 1px 2px 3px 4px #57769580;
+    cursor: pointer;
+  }
+  .offer_image{
+position: absolute;
+transform: rotate(50deg);
+right: -26px;
+background: red;
+padding: 0px 21px;
+top: 23px;
+font-size: 15px;
+  }
+  .open-close-container {
+    border: 1px solid #dddddd;
+    margin-top: 1em;
+    padding: 20px 20px 0px 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
